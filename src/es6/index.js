@@ -7,7 +7,6 @@ let lorem = "frase epica a separar\n"
 let lorem2 = `otra frase epica quee se necesita
 ahora es otra frase epica
 `
-
 console.log(lorem)
 console.log(lorem2)
 
@@ -24,3 +23,11 @@ console.log(person.name, person.age);
 // ES6
 let { name, age} = person
 console.log(name, age)
+
+// ---Spread operator---
+let team1 = ['Oscar', 'Julian', 'Ricardo']
+let team2 = ['Pepito', 'Jonas', 'Brayan']
+
+// triple punto para unir una arreglo dentro de otro
+let education = ['David', ...team1, ...team2]
+console.log(education)
