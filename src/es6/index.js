@@ -1,21 +1,10 @@
-function newFunction(name, age, country) {
-    var name = name || 'Edilberto'
-    var age = age || 32
-    var country = country || 'MEX'
-    console.log(name, age, country)
-}
+// Propiedad de objetos mejorada
+let nombre = 'Edi'
+let age = 32
 
-// es6
-function newFuntion2(name = 'Edilberto', age = 32, country = 'CO') {
-    console.log(name, age, country)
-}
+// forma vieja
+obj = {nombre: nombre, age: age}
 
-newFuntion2()
-newFuntion2('Edilberto', 12, 'US')
-
-let hello = "Hello"
-let world = "World"
-let epicPhrase = hello + ' ' + world
-console.log(epicPhrase)
-let epicPhrase2 = `${hello} ${world}`
-console.log(epicPhrase2)
+// ES6
+obj2 = {nombre, age}
+console.log(obj2)
