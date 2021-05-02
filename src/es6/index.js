@@ -17,3 +17,8 @@ class calculator {
 const calc = new calculator()
 // llamando al metodo sum de la clase calculator
 console.log(calc.sum(2,2))
+
+// Modulos
+import hello from './module.js'
+
+hello()
