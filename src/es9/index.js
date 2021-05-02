@@ -1,4 +1,4 @@
-// Operador de reposo extrae las propiedades de un onejto
+// Spread operator extrae las propiedades de un onejto
 const obj = {
     nombre: 'Edi',
     age: '23',
@@ -12,7 +12,7 @@ console.log(nombre, all)
 let { country, ...all } = obj
 console.log(all)
 
-// Propagacion anida dos objetos
+// Propagacion propiedades anida dos objetos
 const obj = {
     nombre: 'Edi',
     age: 32,
