@@ -1,21 +1,19 @@
-function newFunction(name, age, country) {
-    var name = name || 'Edilberto'
-    var age = age || 32
-    var country = country || 'MEX'
-    console.log(name, age, country)
+// Clases
+class calculator {
+    // definicion de variables
+    constructor() {
+        this.valueA = 0
+        this.valueB = 0
+    }
+    // metodos
+    sum(valueA, valueB) {
+        this.valueA = valueA
+        this.valueB = valueB
+        return this.valueA + this.valueB
+    }
 }
 
-// es6
-function newFuntion2(name = 'Edilberto', age = 32, country = 'CO') {
-    console.log(name, age, country)
-}
-
-newFuntion2()
-newFuntion2('Edilberto', 12, 'US')
-
-let hello = "Hello"
-let world = "World"
-let epicPhrase = hello + ' ' + world
-console.log(epicPhrase)
-let epicPhrase2 = `${hello} ${world}`
-console.log(epicPhrase2)
+// creando objeto
+const calc = new calculator()
+// llamando al metodo sum de la clase calculator
+console.log(calc.sum(2,2))
