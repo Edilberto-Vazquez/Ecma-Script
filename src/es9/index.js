@@ -11,3 +11,16 @@ console.log(nombre, all)
 
 let { country, ...all } = obj
 console.log(all)
+
+// Propagacion anida dos objetos
+const obj = {
+    nombre: 'Edi',
+    age: 32,
+}
+
+const obj1 = {
+    ...obj,
+    country: 'MX'
+}
+
+console.log(obj1)
