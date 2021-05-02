@@ -36,3 +36,19 @@ const listOfNames4 = nombre => {
 
 // ES6 arrow function forma 3
 const square = num => num * num
+
+// ---Promesas---
+const helloPromise = () => {
+    return new Promise((resolve, reject) => {
+        if (false) {
+            resolve('Hey!')
+        } else {
+            reject('Ups!!')
+        }
+    })
+}
+
+helloPromise()
+    .then(response => console.log(response))
+    .then(() => console.log('hola'))
+    .catch(error => console.log(error))
