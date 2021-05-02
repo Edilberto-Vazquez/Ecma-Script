@@ -1,21 +1,12 @@
-function newFunction(name, age, country) {
-    var name = name || 'Edilberto'
-    var age = age || 32
-    var country = country || 'MEX'
-    console.log(name, age, country)
-}
+// Multilinea
+// version vieja
+let lorem = "frase epica a separar\n"
++ "otra frase epica que se necesita."
 
-// es6
-function newFuntion2(name = 'Edilberto', age = 32, country = 'CO') {
-    console.log(name, age, country)
-}
+// ES6
+let lorem2 = `otra frase epica quee se necesita
+ahora es otra frase epica
+`
 
-newFuntion2()
-newFuntion2('Edilberto', 12, 'US')
-
-let hello = "Hello"
-let world = "World"
-let epicPhrase = hello + ' ' + world
-console.log(epicPhrase)
-let epicPhrase2 = `${hello} ${world}`
-console.log(epicPhrase2)
+console.log(lorem)
+console.log(lorem2)
