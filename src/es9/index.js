@@ -24,3 +24,13 @@ const obj1 = {
 }
 
 console.log(obj1)
+
+// Promise finally
+const helloWorld = () => {
+    return new Promise ((resolve, reject) => {
+        (true)
+            // ? resolve('Hello World')
+            ? setTimeout(() => resolve('Hello World'), 3000)
+            : reject(new Error('Test Error'))
+    })
+}
